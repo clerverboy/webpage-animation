@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My easy website</title>
+	<style>
+		*{
+				margin: 0;
+					padding: 0;
+			}
+		body{
+			font-size:16px;
+			color:#673929;
+		}
+		#container{
+			width: 900px;
+			margin: 0 auto;
+		}
+		#header{
+			height: 220px;
+			margin-bottom: 5px;
+			position: relative;
+		}
+		#icon-list{
+			position: absolute;
+			top:190px;
+			right:10px;
+			width: 130px;
+			height: 30px;
+		}
+		#nav{
+			height: 30px;
+			line-height: 30px;
+			margin:5px;
+			background-color: #09c;
+			font:18px/30px;
+			color:#fff;
+			letter-spacing: 15px;
+			text-align: center;
+		}
+		#nav a{
+			text-decoration: none;
+		}
+		a:link{
+			color:#fff;
+		}
+		a:visited{
+			color:#fff;
+		}
+		a:hover{
+			color:yellow;
+		}
+		a:active{
+			color:yellow;
+		}
+		#main{
+			background-color: #000;
+			/*height: 1000px;*/
+		}
+		#aside{
+			float:left;
+			width: 300px;
+			height: 1075px;
+			background-color: #6cf;
+			text-align: center;
+			font-size:14px;
+		}
+		#image-list{
+			width: 160px;
+			margin:0 auto;
+			margin-top:10px;
+		}
+		.pol{
+			width: 160px;
+			padding: 5px;
+			background-color: #eee;
+			border:1px solid #bfbfbf;
+			box-shadow: 2px 2px 4px #aaa;
+			border-radius: 5px;
+			margin-top: 25px;
+		}
+		.rotate-left{
+			-webkit-transform: rotate(7deg);
+			-ms-transform: rotate(7deg);
+			-o-transform: rotate(7deg);
+			transform: rotate(7deg);
+		}
+		.rotate-right{
+			-webkit-transform: rotate(-7deg);
+			-ms-transform: rotate(-7deg);
+			-o-transform: rotate(-7deg);
+			transform: rotate(-7deg);
+		}
+		#content{
+			float:right;
+			width: 595px;
+			/*height: 1000px;*/
+			margin-bottom: 5px;
+			background-color: #cff;
+		}
+		.subcon{
+			width: 570px;
+			margin: 10px auto;
+
+			clear:both;
+		}
+		.subcon img{
+			margin: 5px;
+			padding: 5px;
+			margin-bottom: 100px;
+			float:left;
+			border:1px dashed #000;
+		}
+		.subcon .subtext{
+			width:55%;
+			float:left;
+			margin:5px;
+		}
+		.subcon h2{
+			margin: 5px;
+		}
+		.subcon p{
+			font:14px/1.5em;
+		}
+		#footer{
+			height: 60px;
+			line-height: 60px;
+			background-color: #6cf;
+			clear:both;
+			text-align: center;
+		}
+		#fix{
+			height: 200px;
+			position: fixed;
+			top:100px;
+			left: 5px;
+		}
+		#word{
+			position: absolute;
+			top:180px;
+			left: 1px;
+		}
+		table{
+			width: 280px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img src="../images/b1.jpg" height="220" width="900">
+			<div id="icon-list">
+				<img src="../images/s1.jpg" width="20" height="20">
+				<img src="../images/s2.jpg" width="20" height="20">
+				<img src="../images/s1.jpg" width="20" height="20">
+				<img src="../images/s2.jpg" width="20" height="20">
+			</div>
+		</div>
+		<div id="nav">
+			<a href="#">首页</a>
+			<a href="#">介绍</a>
+			<a href="#">产品</a>
+			<a href="#">价格</a>
+			<a href="#">售后</a>
+		</div>
+		<div id="main">
+			<div id="aside">
+				<h2>产品列表</h2>
+				<br>
+				<h3>价格</h3>
+				<table>
+					<th>
+						<td>产品1</td>
+						<td>产品2</td>
+						<td>产品3</td>
+						<td>产品4</td>
+					</th>
+					<tr>
+						<td class="tdstyle">规格A</td>
+						<td>15</td>
+						<td>25</td>
+						<td>20</td>
+						<td>16</td>
+					</tr>
+					<tr>
+						<td class="tdstyle">规格B</td>
+						<td>20</td>
+						<td>30</td>
+						<td>25</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td class="tdstyle">规格C</td>
+						<td>25</td>
+						<td>35</td>
+						<td>30</td>
+						<td>26</td>
+					</tr>
+				</table>
+				<br><br>
+				<h3>图片展示</h3>
+				<div id="image-list">
+					<div class="pol rotate-left"><img src="../images/b1.jpg" width="150" height="100"></div>
+					<div class="pol rotate-right"><img src="../images/b2.jpg" width="150" height="100"></div>
+					<div class="pol rotate-left"><img src="../images/b3.jpg" width="150" height="100"></div>
+					<div class="pol rotate-right"><img src="../images/b4.jpg" width="150" height="100"></div>
+				</div>
+			</div>
+			<div id="content">
+				<div class="subcon">
+					<img src="../images/b1.jpg" width="200" height="150">
+					<div class="subtext">
+						<h2>产品1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsa ut similique nemo sapiente. Dolorum delectus rerum officiis autem maiores dolores nisi iste ab id!</p>
+					</div>
+				</div>
+				<div class="subcon">
+					<img src="../images/b2.jpg" width="200" height="150">
+					<div class="subtext">
+						<h2>产品2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolores aliquam unde facere eaque temporibus distinctio blanditiis. Reprehenderit nemo, quo labore itaque. Ipsam reprehenderit, nulla!</p>
+					</div>
+				</div>
+				<div class="subcon">
+					<img src="../images/b3.jpg" width="200" height="150">
+					<div class="subtext">
+						<h2>产品3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo ipsum iste, alias, ducimus soluta maiores reprehenderit vel in! Modi, inventore. Cumque nisi ipsam numquam?</p>
+					</div>
+				</div>
+				<div class="subcon">
+					<img src="../images/b4.jpg" width="200" height="150">
+					<div class="subtext">
+						<h2>产品4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, beatae? Praesentium itaque harum quibusdam eveniet nihil iusto impedit tempora, earum soluta! Minima aut voluptate, neque!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+	<div id="fix">
+		<img src="../images/b2.jpg" width="150" height="200">
+		<div id="word">
+			<p>这是一个广告位</p>
+		</div>
+	</div>
+</body>
+</html>
