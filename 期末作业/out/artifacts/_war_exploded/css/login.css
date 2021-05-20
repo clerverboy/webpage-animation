@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-repeat: no-repeat;
+}
+
+#bigBox{
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px 50px;
+    background-color: #f093fb;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.8;
+}
+#bigBox h1{
+    color: white;
+}
+#bigBox h3{
+    color: red;
+}
+#bigBox .inputBox{
+    margin-top: 50px;
+}
+#bigBox .inputBox .inputText{
+    margin-top: 20px;
+}
+#bigBox .inputBox .inputText input{
+    border: 0;
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #f093fb;
+    border-bottom: 3px solid #000000;
+    color: white;
+}
+
+#bigBox .inputBox .inputButton{
+    border: 0;
+    width: 150px;
+    height: 25px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}

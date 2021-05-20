@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyg.mapper.ShopCarMapper">
+
+    <insert id="addMilk" parameterType="shopCar">
+        insert into t_shopcar (mid,number,uid) values (#{mid},#{number},#{uid});
+    </insert>
+
+    <update id="updateNumber" parameterType="map">
+        update t_shopcar set number=#{number}  where mid = (select id from t_milk where name=#{name}) and uid=#{uid};
+    </update>
+
+<!--    <update id="updateTotalPrice" parameterType="map">-->
+<!--        update t_shopcar set totalPrice=#{totalPrice}  where name=#{name};-->
+<!--    </update>-->
+
+    <delete id="deleteMilk">
+        delete from t_shopcar where mid = (select id from t_milk where name = #{name})
+    </delete>
+
+    <delete id="deleteShopCar">
+        delete from t_shopcar where uid=#{uid}
+    </delete>
+
+    <select id="listAllMilk" resultType="milk">
+        select id,imgUrl,name,price,number from t_shopcar a,t_milk b where a.mid = b.id and uid = #{uid}
+    </select>
+
+    <select id="queryMilkByName" resultType="milk">
+        select * from t_milk where name=#{name}
+    </select>
+
+    <select id="queryMilkById" parameterType="map" resultType="shopCar">
+        select * from t_shopcar where mid = #{mid} and uid = #{uid}
+    </select>
+
+</mapper>
