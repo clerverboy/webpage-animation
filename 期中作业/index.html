@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  
+</head>
+<body>
+  <!-- 页面的顶部 -->
+  <div id="top">
+    <div class="container"></div>
+  </div>
+  <!-- 页面的头部 -->
+  <div id="header">
+    <div class="container">
+      <div class="header_left left">
+        <div class="qq"></div>
+        <div class="tel">0000-000-000</div>
+      </div>
+      <ul class="right">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">积分兑换</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <!-- 在购物车前面添加一个购物车的图标 -->
+        <li class="shop_car"><span></span><a href="#">购物车</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 页面的导航栏 -->
+  <div id="nav">
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="logo">
+        </div>
+        <div class="logoText">
+          <span>biubiu奶茶甜点欢迎您</span>
+        </div>
+      </div>
+      <ul class="right">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">饮品</a></li>
+        <li><a href="#">甜点</a></li>
+        <li><a href="#">冰激凌</a></li>
+        <li><a href="#">服务</a></li>
+        <li><a href="#">线下店铺</a></li>
+        <li><audio id="bgm" src="source/bgm.mp3" autoplay="autoplay" loop="loop"></audio><img id="navLiImg" class="navMusic" src="images/Music.png" onclick="playAndPause(this)"></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 页面的banner部分,滚动栏 -->
+  <div id="banner">
+    <!-- <div class="container">
+      <ul id="lunbo">
+        <li><img src="images/banner1.jpg"></li>
+        <li><img src="images/banner2.jpg"></li>
+        <li><img src="images/banner3.jpg"></li>
+        <li><img src="images/banner4.jpg"></li>
+      </ul>
+    </div>  -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/banner1.jpg" width="100%;" height="630"></div>
+          <div class="swiper-slide"><img src="images/banner2.jpg" width="100%;" height="630"></div>
+          <div class="swiper-slide"><img src="images/banner3.jpg" width="100%;" height="630"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="banner-nav-bg"></div>
+  </div>
+
+  <!-- 页面的热卖部分 -->
+  <div id="star">
+    <div class="container">
+      <div class="star_top">
+        <img src="images/top1.jpg"></img>
+      </div>
+      <ul>
+        <li>
+          <div>
+            <img src="images/cha1.jpg">
+          </div>
+          <h2>N3</h2>
+          <p>test1</p>
+          <p class="money" onclick="buy()">&yen;10 立即购买 <span></span></p>
+        </li>
+        <li class="line"></li>
+        <li>
+          <div>
+            <img src="images/cha2.jpg">
+          </div>
+          <h2>N3</h2>
+          <p>test1</p>
+          <p class="money">&yen;10 立即购买 <span></span></p>
+        </li>
+        <li class="line"></li>
+        <li>
+          <div>
+            <img src="images/cha3.jpg">
+          </div>
+          <h2>N3</h2>
+          <p>test1</p>
+          <p class="money">&yen;10 立即购买 <span></span></p>
+        </li>
+        <li class="line"></li>
+        <li>
+          <div>
+            <img src="images/cha4.jpg">
+          </div>
+          <h2>N3</h2>
+          <p>test1</p>
+          <p class="money">&yen;10 立即购买 <span></span></p>
+        </li> 
+      </ul>
+    </div>
+  </div>
+
+  <!-- 页面冰饮部分 -->
+  <div id="accessory">
+    <div class="container">
+      <div class="acc_top">
+        <img src="images/top2.jpg"></img>
+      </div>
+      <div class="acc_main">
+        <div class="acc_left left">
+          <div>
+            <img class="l1" src="images/summer3.jpg">
+          </div>
+          <div class="acc_all">
+            <p>夏日畅销榜</p>
+            <ul>
+              <li>柠檬水</li>
+              <li>青柠汽水</li>
+              <li>黄瓜汽水</li>
+              <li>草莓冰激凌</li>
+              <li>抹茶冰激凌</li>
+              <li>原味冰激凌</li>
+            </ul>
+            <h2 class="line"></h2>
+            <p class="acc">冰饮系列<span></span></p>
+          </div>
+          <div>
+            <img class="l2" src="images/summer4.jpg">
+          </div>
+          <div>
+            <img class="l3" src="images/summer2.jpg">
+          </div>
+        </div>
+        <div class="acc_right right">
+          <div><img class="r1" src="images/summer1.jpg"></div>
+          <div><img class="r2" src="images/summer5.jpg"></div>
+          <div><img class="r3" src="images/summer6.jpg"></div>
+          <div><img class="r4" src="images/summer7.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面的甜点部分 -->
+  <div id="world">
+    <div class="container">
+      <div class="world_top">
+        <img class="spanTest" src="images/top3.jpg"></img>
+      </div>
+      <div class="world_main">
+        <div class="world_left left">
+          <div><img src="images/xidian1.jpg"></div>
+          <div><img src="images/xidian2.jpg"></div>
+          <div><img src="images/xidian3.jpg"></div>
+          <div><img src="images/xidian4.jpg"></div>
+        </div>
+        <div class="world_right right">
+          <div class="world_title">
+            <div class="news">新闻</div>
+            <div class="weibo">微博</div>
+          </div>
+          <ul>
+            <li>
+              <dl>
+                <dt>
+                  <img src="images/news1.jpg">
+                </dt>
+                <dd>test</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>
+                  <img src="images/news2.jpg">
+                </dt>
+                <dd>test</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>
+                  <img src="images/news3.jpg">
+                </dt>
+                <dd>test</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>
+                  <img src="images/news4.jpg">
+                </dt>
+                <dd>test</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面的服务部分 -->
+<div id="serve">
+	<div class="container">
+		<ul>
+			<li>
+				<dl>
+					<dt></dt>
+					<dd class="dd1">正品保障</dd>
+					<dd class="dd2">所有的商品都是原装产品</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt></dt>
+					<dd class="dd1">正品保障</dd>
+					<dd class="dd2">所有的商品都是原装产品</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt></dt>
+					<dd class="dd1">正品保障</dd>
+					<dd class="dd2">所有的商品都是原装产品</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt></dt>
+					<dd class="dd1">正品保障</dd>
+					<dd class="dd2">所有的商品都是原装产品</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt></dt>
+					<dd class="dd1">正品保障</dd>
+					<dd class="dd2">所有的商品都是原装产品</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- 页面的售后服务部分 -->
+<div id="after_sale">
+	<div class="container">
+		<ul>
+			<li>
+				<ol>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于biubiu</a></li>
+					<li><a href="#">新闻中心</a></li>
+				</ol>
+			</li>
+			<li>
+				<ol>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于biubiu</a></li>
+					<li><a href="#">新闻中心</a></li>
+				</ol>
+			</li>
+			<li>
+				<ol>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于biubiu</a></li>
+					<li><a href="#">新闻中心</a></li>
+				</ol>
+			</li>
+			<li>
+				<ol>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于biubiu</a></li>
+					<li><a href="#">新闻中心</a></li>
+				</ol>
+			</li>
+			<li>
+				<ol>
+					<li><span class="xl"></span><a href="#">新浪微博</a></li>
+					<li><span class="xl"></span><a href="#">腾讯微博</a></li>
+					<li><span class="xl"></span><a href="#">人人网</a></li>
+					<li><span class="xl"></span><a href="#">QQ空间</a></li>
+				</ol>
+			</li>
+			<li>
+				<ol>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于biubiu</a></li>
+					<li><a href="#">新闻中心</a></li>
+				</ol>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- 页面的底部 -->
+<div id="footer">
+	<div class="container">
+		<p>
+			<img src="images/p6.jpg" width="100" height="16">
+			<span>@2021 武汉市xxxxxxx</span>
+			<a href="#">版权说明</a>
+			<a href="#">版权说明</a>
+			<a href="#">版权说明</a>
+			<a href="#">版权说明</a>
+			<a href="#">版权说明</a>
+		</p>
+	</div>
+</div>
+  <!-- <script src="js/lunbo.js"></script> -->
+  <script src="js/index.js"></script>
+  <script src="js/swiper.js"></script>
+  <script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          paginationClickable: true,
+          loop: true,
+          autoplay: 3000,
+  
+          
+          speed: 1000,
+          prevButton: '.swiper-button-prev',
+          nextButton: '.swiper-button-next',
+          effect: 'fade',//  effect: 'flip',effect: 'coverflow',slide', 'fade',cube
+          grabCursor: true,
+          cube: {
+              shadow: false,
+              slideShadows: false,
+              shadowOffset: 20,
+              shadowScale: 0.94
+          }
+      });
+  </script>
+</body>
+</html>
